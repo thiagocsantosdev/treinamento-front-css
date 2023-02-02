@@ -1,0 +1,121 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family: 'Roboto', sans-serif;
+  background-color:white;
+}
+header nav ul {
+  gap:2rem;
+  list-style:none;
+  
+}
+header nav ul li a{
+  text-decoration:none;
+  color:black;
+  font-weight:600;
+  transition:0.2s;
+}
+.perfil{
+  margin-top:3rem;
+}
+.perfil img{
+  width:400px;
+  border-radius:50px;
+  margin:1rem;
+}
+.c-perfil-container-right h1{
+  margin:1rem;
+}
+.c-perfil-container-right h3{
+  margin:1rem;
+}
+.c-perfil-container-right p{
+  max-width:600px;
+  margin:1rem;
+}
+.c-perfil-container-right ul{
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  color:gray;
+  padding:0px;
+  margin:1rem;
+}
+.c-perfil-container-right li{
+ border: 2px solid gray;
+ border-radius:5px;
+ padding:3px;
+}
+.buttoms{
+  display :flex;
+  gap:2rem;
+ 
+}
+.c-buttom{
+  cursor: pointer;
+  margin:2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  width:10rem;
+  font-size:26px;
+  color:white;
+  background-color:black;
+  transition:0.5s;
+  box-shadow: 6px 4px #8888;
+}
+#git{
+  color:black;
+  background-color:white;
+}
+
+
+/*==========hover=============*/
+.c-buttom:hover{
+  background-color:white;
+  color:black;
+    box-shadow: 4px 2px #8888;
+    left: 2px;
+    top: 2px;
+}
+#git:hover{
+  background-color:black;
+  color:white;
+}
+header nav ul li a:hover{
+  border-bottom: 3px solid black;
+}
+footer {
+  margin-top:4rem;
+  weight:20px;
+  background-color:gray;
+  height:50px;
+}
+
+
+ /*====== Align===== */
+header nav ul, .perfil, .c-buttom, .perfil-container-right, footer{
+  display:flex;
+  justify-content:center;  
+  align-items:center;
+}
+
+
+/*====== Responsive===== */
+@media (max-width: 767px) {
+  /* CSS rules here */
+  .perfil{
+  display:flex;
+  flex-direction:column;
+  margin-top:3rem;
+  justify-content:center;
+  align-items:center;
+}
+  .c-perfil-container-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }  
+}
+
+
+
